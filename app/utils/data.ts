@@ -22,7 +22,7 @@ const employments: { id: number; position: Position }[] = [
           value: "Innleiðing auðkenningarþjónustu með rafrænum skilríkjum.",
         },
       ],
-      skills: "React, Next.js, Tailwind, GraphQL, oAuth",
+      skills: "React, Next.js, Tailwind, GraphQL, OAuth",
     },
   },
   {
