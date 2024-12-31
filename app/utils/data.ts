@@ -1,8 +1,8 @@
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { Position } from "../components/card";
+import { Employment } from "../utils/types";
 
-const employments: { id: number; position: Position }[] = [
+const employments: Employment[] = [
   {
     id: 1,
     position: {

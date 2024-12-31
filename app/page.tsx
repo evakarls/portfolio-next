@@ -1,4 +1,4 @@
-import { Footer, Card } from "./components";
+import { Footer, CardWrapper } from "./components";
 import { employments } from "./utils/data";
 
 export default function Home() {
@@ -9,14 +9,7 @@ export default function Home() {
           <h1>Eva Þóra Karlsdóttir</h1>
           <span>Forritari</span>
         </div>
-        <section className="w-full">
-          <h2 className="my-4">Reynsla</h2>
-          <div className="border-l border-foreground dark:border-background flex flex-col gap-12">
-            {employments.map((employment) => (
-              <Card key={employment.id} position={employment.position} />
-            ))}
-          </div>
-        </section>
+        <CardWrapper title="Reynsla" cards={employments} />
       </main>
       <Footer />
     </div>
