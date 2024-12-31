@@ -6,15 +6,14 @@ import { useEffect, useState } from "react";
 
 export const Navbar = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { setTheme, resolvedTheme } = useTheme();
   useEffect(() => {
     setMounted(true);
   }, []);
 
   const handleClick = () => {
     if (!mounted) return;
-    console.log("here", theme);
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
   };
 
   return (

@@ -38,7 +38,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${demSerifText.variable} antialiased overflow-y-auto bg-stone-100 dark:bg-gradient-to-r from-slate-800 to-neutral-900`}
       >
-        <ThemeProvider attribute="data-mode">
+        <ThemeProvider attribute="data-mode" enableSystem>
           <Navbar />
           {children}
         </ThemeProvider>

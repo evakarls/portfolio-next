@@ -1,13 +1,7 @@
 import { faCode } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import type { Position } from "../utils/types";
 
-export type Position = {
-  title: string;
-  company: string;
-  date: string;
-  responsibilities: { value: string; id: number }[];
-  skills: string;
-};
 export const Card = ({ position }: { position: Position }) => {
   return (
     <article className="flex flex-col px-8 gap-4 py-4 items-start text-foreground dark:text-background min-h-40 min-w-56">

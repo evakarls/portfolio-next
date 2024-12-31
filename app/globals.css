@@ -2,33 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  color: var(--foreground);
-  background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {
   @apply font-[family-name:var(--font-dm-serif-text)] text-5xl;
 }
+
 h2 {
   @apply font-bold;
 }
 
-body {
-  @apply dark:text-background;
+div,
+h1,
+h2,
+h3,
+p,
+span,
+a,
+button,
+li {
+  @apply text-slate-900 dark:text-stone-50;
 }
 
 a {
